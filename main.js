@@ -28,3 +28,14 @@ function getLength(argumentThing) {
 }
 console.log(getLength('this is a string'));
 console.log(getLength(['This is an array, "Array2", "Array3']));
+// declare const backpack: Backpack<string>;
+// const object = backpack.get();
+// backpack.add('23');
+var message = "This is a string";
+// message();
+//Error since property doesnt exist
+// user2.location; 
+function greet(person, date) {
+    console.log("Helo ".concat(person, ", today is ").concat(date.toDateString(), "!"));
+}
+greet("Riley", new Date());

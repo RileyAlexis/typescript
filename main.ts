@@ -52,4 +52,34 @@ console.log(getLength(['This is an array, "Array2", "Array3']));
 
 //******************** Generics ***************** */
 
+type StringArray = Array<string>;
+type NumberArray = Array<number>;
+type ObjectWithNameArray = Array<{ name: string }>;
+
+interface Backpack<Type> {
+    add: (obj: Type) => void;
+    get: () => Type;
+}
+// declare const backpack: Backpack<string>;
+// const object = backpack.get();
+// backpack.add('23');
+
+
+let message = "This is a string";
+// message();
+
+//Error since property doesnt exist
+// user2.location; 
+
+function greet(person: string, date: Date) {
+    console.log(`Helo ${person}, today is ${date.toDateString()}!`);
+}
+
+greet("Riley", new Date());
+
+
+
+
+
+
 
